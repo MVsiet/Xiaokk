@@ -1,0 +1,140 @@
+body{
+    background: rgb(0, 0, 0);
+    
+}
+.genshinlogo img{
+ width: 200px;
+ cursor: pointer;
+}
+.navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -20PX;
+    padding: 35PX 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar ul li {
+    
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px ;
+    position: relative;
+    
+}
+.navbar ul li a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+.navbar ul li ::after{
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background:#196A73;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li :hover::after{
+width: 100%;
+}
+.xiao{
+margin-top: -30PX;
+margin-left: 5%;
+}
+.xiao h1{
+    font-family: Arial, Helvetica, sans-serif;
+color: #369297;
+font-size: 90px;
+}
+.xiaoimg {
+    margin-top: -68%;
+    margin-left: 110%;
+}
+.xiaoimg img{
+    width: 500px;
+}
+.xiaoline{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -20px;
+    color: aliceblue;
+    margin-left: 5%;
+    font-size: 23px;
+    width: 50%;
+}
+ .spp{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #369297;
+    font-size: 34px;
+    border-radius: 15px;
+   font-weight: bold;
+} 
+button{
+    width: 200PX;
+    padding: 15PX 0;
+    text-align: center;
+    margin: 20PX 10PX;
+    border-radius: 25PX;
+    font-weight: bold;
+    border: 2PX solid #196A73;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+} 
+span{
+background: #196A73;
+height: 100%;
+width: 0;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+button:hover span{
+width: 100%;
+}
+button:hover {
+    border: none;
+}
+@media (max-width:414px) {
+    .genshinlogo img{
+        width: 150px;
+        cursor: pointer;
+       }
+       .navbar ul li {
+        list-style: none;
+        margin: 5px 5px ;
+    }
+    .xiao{
+        margin-top: -85PX;
+        margin-left: 30%;
+    }
+    .xiaoline{
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 17%;
+        font-size: 30px;
+        width: 75%;
+    }
+    .xiaoimg {
+        margin-top: 5px;
+        margin-left: -30%;
+    }
+    .xiaoimg img{
+        width: 450px;
+    }
+
+}
